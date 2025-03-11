@@ -25,8 +25,6 @@ namespace chaeHa_Helper
             StreamWriter tableSw = new StreamWriter(data.tablePath + "/" + "ChartDataTable.txt");
             StreamWriter exportSw = new StreamWriter(data.exportPath + "/" + "ChartDataTable.txt");
 
-            // data.googleSheetUrl = "https://docs.google.com/spreadsheets/d/1a8H8Y1INIviej8HGAVL0gTwkpFUTCKcehHdaZcLNjGY/export?format=tsv&range=A2:W10";
-
             var url = data.googleSheetUrl + data.googldeSheetRange;
 
             LoadGoogleSheet(url, (resBool, json) =>
